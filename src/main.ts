@@ -28,6 +28,9 @@ function createGrid(size: number) {
 
 function setMode(mode: Mode) {
   state.mode = state.mode === mode ? "draw" : mode;
+
+  randomColorBtn.classList.toggle("controls__btn--selected", state.mode === "randomize");
+  eraseBtn.classList.toggle("controls__btn--selected", state.mode === "erase");
 }
 
 function updatePenColor() {

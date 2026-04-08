@@ -53,6 +53,19 @@ body {
 .controls__btn {
   flex: 1;
   padding-block: 0.5rem;
+  background-color: #eee;
+  border: 1px solid #999;
+  border-radius: 4px;
+  color: #000;
+  font-family: inherit;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.controls__btn--selected {
+  background-color: #555;
+  color: #fff;
 }
 
 .canvas {
@@ -80,5 +93,15 @@ body {
 
   .controls__row {
     flex-direction: column;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .controls__btn:hover {
+    background-color: #ddd;
+  }
+
+  .controls__btn--selected:hover {
+    background-color: #444;
   }
 }
