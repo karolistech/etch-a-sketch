@@ -50,6 +50,31 @@ body {
   gap: 0.5rem;
 }
 
+.controls__input--range {
+  appearance: none;
+  width: 100%;
+  height: 8px;
+  background-color: #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.controls__input--range::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background-color: #333;
+  border: none;
+  border-radius: 50%;
+}
+
+.controls__input--range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  background-color: #333;
+  border-radius: 50%;
+}
+
 .controls__btn {
   flex: 1;
   padding-block: 0.5rem;
