@@ -50,6 +50,26 @@ body {
   gap: 0.5rem;
 }
 
+.controls__input--color {
+  width: 50px;
+  height: 25px;
+  border: none;
+  cursor: pointer;
+}
+
+.controls__input--color::-moz-color-swatch {
+  border: none;
+}
+
+.controls__input--color::-webkit-color-swatch {
+  border: none;
+  border-radius: 0;
+}
+
+.controls__input--color::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
 .controls__input--range {
   appearance: none;
   width: 100%;
